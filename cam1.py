@@ -72,12 +72,12 @@ mainWindow.resizable(width=False, height=False)
 mainWindow.bind('<Escape>', lambda e: mainWindow.quit())
 lmain = tk.Label(mainWindow, compound=tk.CENTER, anchor=tk.CENTER, relief=tk.RAISED)
 button = tk.Button(mainWindow, text="Capture", command=prompt_ok)
-#button
+
 
 lmain.pack()
 button.place(bordermode=tk.INSIDE, relx=0.5, rely=0.9, anchor=tk.CENTER, width=300, height=50)
 button.focus()
-#but
+
 
 def show_frame():
     global cancel, prevImg, button
